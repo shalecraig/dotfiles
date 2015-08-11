@@ -855,11 +855,11 @@ brew install autoconf \
              maven \
              mongodb \
              postgresql \
+             redis \
              terminal-notifier \
              tree \
              wget \
              xz
-
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
