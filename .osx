@@ -847,17 +847,17 @@ brew install autoconf \
              automake \
              boost \
              curl \
-             htop-osx \
              encfs \
              git \
+             htop-osx \
              hub \
              jq \
              maven \
-             postgresql \
              mongodb \
+             postgresql \
              terminal-notifier \
-             wget \
              tree \
+             wget \
              xz
 
 ###############################################################################
