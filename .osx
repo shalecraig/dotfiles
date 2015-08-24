@@ -854,6 +854,7 @@ brew install autoconf \
              jq \
              maven \
              mongodb \
+             ngrok \
              postgresql \
              redis \
              terminal-notifier \
