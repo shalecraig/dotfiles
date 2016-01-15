@@ -857,10 +857,24 @@ brew install autoconf \
              ngrok \
              postgresql \
              redis \
+             reattach-to-user-namespace \
              terminal-notifier \
              tree \
+             tmux \
              wget \
              xz
+
+###############################################################################
+# Setup TMUX                                                                  #
+###############################################################################
+
+# See http://superuser.com/questions/834525/unable-to-launch-application-in-tmux
+touch ~/.tmux.conf ~/.tmux-osx.conf
+
+echo "if-shell 'test \"$(uname)\" = \"Darwin\"' 'source ~/.tmux-osx.conf'" >> ~/.tmux.conf
+echo 'set-option -g default-command "reattach-to-user-namespace -l bash"' >> ~/.tmux-osx.conf
+tmux source-file ~/.tmux.conf
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
