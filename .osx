@@ -861,6 +861,7 @@ brew install autoconf \
              terminal-notifier \
              tree \
              tmux \
+             watch \
              wget \
              xz
 
